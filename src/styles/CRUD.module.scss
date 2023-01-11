@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 .crud_wrap {
+    position: relative;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
@@ -9,6 +10,14 @@
     border-radius: 16px;
     padding: 2rem;
     box-sizing: border-box;
+    .link_wrap {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        > a {
+            text-decoration-line: none;
+        }
+    }
     > div {
         margin-bottom: 1rem;
     }

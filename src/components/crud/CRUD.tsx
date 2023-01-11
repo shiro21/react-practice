@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "../../styles/CRUD.module.scss";
 import { CreateButton } from "../item/CreateButton";
 import { Textarea } from "../item/Textarea";
@@ -60,6 +61,9 @@ export const CRUD = () => {
 
     return (
         <article className={styles.crud_wrap}>
+            <div className={styles.link_wrap}>
+                <Link to="/">메인으로 이동하기</Link>
+            </div>
             <div className={styles.text_wrap}>
                 <TextInput text={title} setText={setTitle} />
             </div>
